@@ -1,0 +1,10 @@
+lista.txt
+picador1.jpeg
+picador2.jpeg
+picador3.jpeg
+picador4.jpeg
+picador5.jpeg
+picador6.jpeg
+picador7.jpeg
+picador8.jpeg
+picador9.jpeg

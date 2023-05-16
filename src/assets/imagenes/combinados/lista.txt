@@ -1,0 +1,15 @@
+lista.txt
+t800comb.jpeg
+t800comb1.jpeg
+termint8001.jpeg
+termint8002.jpeg
+termint8003.jpeg
+termint8004.jpeg
+termint8005.jpeg
+termint8006.jpeg
+termint8007.jpeg
+termint8008.jpeg
+termint8009.jpeg
+torleonarfrank1.jpeg
+torleonarfrank2.jpeg
+torleonarfrank3.jpeg

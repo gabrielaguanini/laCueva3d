@@ -1,0 +1,12 @@
+lista.txt
+t8001.jpeg
+t80010.jpeg
+t80011.jpeg
+t8002.jpeg
+t8003.jpeg
+t8004.jpeg
+t8005.jpeg
+t8006.jpeg
+t8007.jpeg
+t8008.jpeg
+t8009.jpeg
