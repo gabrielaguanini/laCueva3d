@@ -58,7 +58,7 @@
         <!--Card PortaJoystick 3-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
           <div class="card-image" (click)="openModal(templateModalSlider)"
-            style="background-image: url('./assets/imagenes/portajoystick/spiderman1.jpeg');">
+            style="background-image: url('./assets/imagenes/portajoystick/spidermanUno.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 4-->
@@ -226,17 +226,42 @@
   <!--//////////////////////MODAL Y SLIDER///////////////////////-->
   <ng-template #templateModalSlider>
 
-    <div class="container">
-      <div class="row" id="divBtnCerrarModal">
-        <button type="button" id="btnCerrarModal" class="btn btn-secondary" (click)="bsModalRef.hide()">
-        </button>
-      </div>
-      <div class="" *ngFor="let listaImg of arrayListPortaJoy">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="{{listaImg.src}}" alt="First slide">
+   <div class="dblclickcerrar mx-auto">
+    <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para cerrar</button>
+    <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para cerrar</button>
+    
+    
+   </div>
+
+    
+      <div class="row" (dblclick)="bsModalRef.hide()">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/imagenes/portajoystick/darthvader1.jpeg" class="d-block w-100" alt="Imgdarthvader1">
+            </div>
+            <div class="carousel-item" *ngFor="let listaImg of arrayListBustBatman">
+              <img src="{{listaImg.src}}" class="d-block w-100" alt="Img">
+            </div>
           </div>
-        </div>
+  
+    
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually"></span>
+          </button>
+     
+    
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually"></span>
+          </button>
+        </div>        
       </div>
-    </div>
-  </ng-template>
+      
+      </ng-template>
+      
+  
+
