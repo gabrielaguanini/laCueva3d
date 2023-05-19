@@ -38,6 +38,7 @@ arrayListPortaJoyRick: listaImg = [];
 arrayListPortaJoyrickandmorty: listaImg = [];
 arrayListPortaJoyryu: listaImg = [];
 arrayListPortaJoyspider: listaImg = [];
+arrayListPortaJoyTerminator: listaImg = [];
 
 arrayListVarios: listaImg = [];
 
@@ -152,8 +153,8 @@ ngOnInit(){
     {id:71, src:"../assets/imagenes/portajoystick/darthvader3.jpeg"}
   ];
   this.arrayListPortaJoyironmai  = [
-    {id:72, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
-    {id:73, src:"../assets/imagenes/portajoystick/ironmaiden1.jpeg"},
+    {id:72, src:"../assets/imagenes/portajoystick/ironmaiden1.jpeg"},
+    {id:73, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
     {id:74, src:"../assets/imagenes/portajoystick/ironmaiden2.jpeg"},
     {id:75, src:"../assets/imagenes/portajoystick/ironmaiden3.jpeg"},
     {id:76, src:"../assets/imagenes/portajoystick/ironmaiden4.jpeg"},
@@ -195,8 +196,8 @@ this.arrayListPortaJoyRick = [
     {id:106, src:"../assets/imagenes/portajoystick/rick4.jpeg"}
   ];
 this.arrayListPortaJoyrickandmorty = [
-    {id:107, src:"../assets/imagenes/portajoystick/rickandmorty.jpeg"},
-    {id:108, src:"../assets/imagenes/portajoystick/rickandmorty1.jpeg"},
+    {id:107, src:"../assets/imagenes/portajoystick/rickandmorty1.jpeg"},
+    {id:108, src:"../assets/imagenes/portajoystick/rickandmorty.jpeg"},
     {id:109, src:"../assets/imagenes/portajoystick/rickandmorty10.jpeg"},
     {id:110, src:"../assets/imagenes/portajoystick/rickandmorty11.jpeg"},
     {id:111, src:"../assets/imagenes/portajoystick/rickandmorty12.jpeg"},
@@ -211,8 +212,8 @@ this.arrayListPortaJoyrickandmorty = [
     {id:120, src:"../assets/imagenes/portajoystick/rickandmorty9.jpeg"}
   ];
   this.arrayListPortaJoyryu = [
-    {id:121, src:"../assets/imagenes/portajoystick/ryu.jpeg"},
-    {id:122, src:"../assets/imagenes/portajoystick/ryu1.jpeg"},
+    {id:121, src:"../assets/imagenes/portajoystick/ryu1.jpeg"},
+    {id:122, src:"../assets/imagenes/portajoystick/ryu.jpeg"},
     {id:123, src:"../assets/imagenes/portajoystick/ryu2.jpeg"},
     {id:124, src:"../assets/imagenes/portajoystick/ryu3.jpeg"},
     {id:125, src:"../assets/imagenes/portajoystick/ryu4.jpeg"},
@@ -224,9 +225,11 @@ this.arrayListPortaJoyrickandmorty = [
     {id:129, src:"../assets/imagenes/portajoystick/spiderman.jpeg"},
     {id:130, src:"../assets/imagenes/portajoystick/spiderman2.jpeg"},
     {id:131, src:"../assets/imagenes/portajoystick/spiderman3.jpeg"},
-    {id:132, src:"../assets/imagenes/portajoystick/spiderman4.jpeg"},
-    {id:133, src:"../assets/imagenes/portajoystick/terminator.jpeg"},
-    {id:134, src:"../assets/imagenes/portajoystick/terminator1.jpeg"},
+    {id:132, src:"../assets/imagenes/portajoystick/spiderman4.jpeg"}
+  ];
+  this.arrayListPortaJoyTerminator = [
+    {id:133, src:"../assets/imagenes/portajoystick/terminator1.jpeg"},
+    {id:134, src:"../assets/imagenes/portajoystick/terminator.jpeg"},
     {id:135, src:"../assets/imagenes/portajoystick/terminator2.jpeg"},
     {id:136, src:"../assets/imagenes/portajoystick/terminator3.jpeg"},
     {id:137, src:"../assets/imagenes/portajoystick/terminator4.jpeg"},

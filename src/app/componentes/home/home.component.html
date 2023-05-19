@@ -45,37 +45,37 @@
 
         <!--Card PortaJoystick 1-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalDarthV)"
             style="background-image: url('./assets/imagenes/portajoystick/darthvader1.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 2-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalIronM)"
             style="background-image: url('./assets/imagenes/portajoystick/ironmaiden1.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 3-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalSpidM)"
             style="background-image: url('./assets/imagenes/portajoystick/spidermanUno.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 4-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalRyu)"
             style="background-image: url('./assets/imagenes/portajoystick/ryu1.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 5-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalTerminator)"
             style="background-image: url('./assets/imagenes/portajoystick/terminator1.jpeg');">
           </div>
         </div>
         <!--Card PortaJoystick 6-->
         <div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">
-          <div class="card-image" (click)="openModal(templateModalSlider)"
+          <div class="card-image" (click)="openModal(templateModalRick)"
             style="background-image: url('./assets/imagenes/portajoystick/rick1.jpeg');">
           </div>
         </div>
@@ -224,44 +224,181 @@
   </div>
 
   <!--//////////////////////MODAL Y SLIDER///////////////////////-->
-  <ng-template #templateModalSlider>
 
-   <div class="dblclickcerrar mx-auto">
-    <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para cerrar</button>
-    <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para cerrar</button>
-    
-    
-   </div>
+  <!--///TemplateDarth Vader///-->
 
-    
-      <div class="row" (dblclick)="bsModalRef.hide()">
+  <ng-template #templateModalSlider></ng-template>
+
+
+  <ng-template #templateModalDarthV>
+    <div class="dblclickcerrar mx-auto">
+      <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+        cerrar</button>
+      <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+        cerrar</button>
+    </div>
+    <div class="container" (dblclick)="bsModalRef.hide()">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoydarthv">
+          <div class="carousel-item active">
+            <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+
+  <!--///Template Iron Maiden///-->
+  <ng-template #templateModalIronM>
+    <div class="dblclickcerrar mx-auto">
+      <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+        cerrar</button>
+      <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+        cerrar</button>
+    </div>
+    <div class="container" (dblclick)="bsModalRef.hide()">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoyironmai">
+          <div class="carousel-item active">
+            <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+
+  <!--///Template Spider Man///-->
+  <ng-template #templateModalSpidM>
+    <div class="dblclickcerrar mx-auto">
+      <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+        cerrar</button>
+      <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+        cerrar</button>
+    </div>
+    <div class="container" (dblclick)="bsModalRef.hide()">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoyspider">
+          <div class="carousel-item active">
+            <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+
+  <!--///Template Ryu///-->
+    <ng-template #templateModalRyu>
+      <div class="dblclickcerrar mx-auto">
+        <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+          cerrar</button>
+        <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+          cerrar</button>
+      </div>
+      <div class="container" (dblclick)="bsModalRef.hide()">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoyryu">
             <div class="carousel-item active">
-              <img src="./assets/imagenes/portajoystick/darthvader1.jpeg" class="d-block w-100" alt="Imgdarthvader1">
-            </div>
-            <div class="carousel-item" *ngFor="let listaImg of arrayListBustBatman">
-              <img src="{{listaImg.src}}" class="d-block w-100" alt="Img">
+              <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
             </div>
           </div>
-  
-    
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually"></span>
           </button>
-     
-    
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually"></span>
           </button>
-        </div>        
+        </div>
       </div>
-      
-      </ng-template>
-      
-  
+    </ng-template>
 
+  <!--///Template Terminator///-->
+  <ng-template #templateModalTerminator>
+    <div class="dblclickcerrar mx-auto">
+      <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+        cerrar</button>
+      <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+        cerrar</button>
+    </div>
+    <div class="container" (dblclick)="bsModalRef.hide()">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoyTerminator">
+          <div class="carousel-item active">
+            <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually"></span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+
+  <!--///Template Rick///-->
+    <ng-template #templateModalRick>
+      <div class="dblclickcerrar mx-auto">
+        <button id="btnPc" type="button" class="btn btn-outline-secondary btn-sm">Doble click en pantalla para
+          cerrar</button>
+        <button id="btnCel" type="button" class="btn btn-outline-secondary btn-sm">Doble tap en pantalla para
+          cerrar</button>
+      </div>
+      <div class="container" (dblclick)="bsModalRef.hide()">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" *ngFor="let listaImg of arrayListPortaJoyRick">
+            <div class="carousel-item active">
+              <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually"></span>
+          </button>
+        </div>
+      </div>
+    </ng-template>

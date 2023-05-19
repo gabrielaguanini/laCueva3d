@@ -49,8 +49,10 @@
    
     background-color: rgb(7, 0, 0);
     position:fixed;
-   
+   }
 
+  .carousel-control-prev-icon{  
+    margin-right: 3%;
    }
 
    .carousel-control-next, .carousel-control-prev{
@@ -58,15 +60,24 @@
     padding: 30%;
    }
 
+
+   #contenedor{
+    width:500px;
+    height:900px;
+  }
+
+  /*Aplicamos la propiedad object-fit cover, ajustar su tamaño y no perder la proporcion de nuestra imagen*/
+  #imgmodal{
+    object-fit: cover;
+    width:50%;
+    height:50%;
+  }
+
    @media handheld, only screen and (max-width: 900px) {
      .carousel-control-prev-icon, .carousel-control-next-icon {
     display:none;
     }
     }
-
-   .carousel-control-next{  
-    padding-right: 31%;
-   }
 
 
    @media handheld, only screen and (min-width: 900px) {
