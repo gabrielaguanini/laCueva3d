@@ -147,14 +147,12 @@ ngOnInit(){
     {id:68, src:"../assets/imagenes/picadores/picador9.jpeg"}
   ];
   ///////PortaJoyStick
-  this.arrayListPortaJoydarthv  = [
-    {id:69, src:"../assets/imagenes/portajoystick/darthvader1.jpeg"},
+  this.arrayListPortaJoydarthv  = [    
     {id:70, src:"../assets/imagenes/portajoystick/darthvader2.jpeg"},
     {id:71, src:"../assets/imagenes/portajoystick/darthvader3.jpeg"}
   ];
   this.arrayListPortaJoyironmai  = [
-    {id:72, src:"../assets/imagenes/portajoystick/ironmaiden1.jpeg"},
-    {id:73, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
+     {id:73, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
     {id:74, src:"../assets/imagenes/portajoystick/ironmaiden2.jpeg"},
     {id:75, src:"../assets/imagenes/portajoystick/ironmaiden3.jpeg"},
     {id:76, src:"../assets/imagenes/portajoystick/ironmaiden4.jpeg"},
@@ -212,23 +210,19 @@ this.arrayListPortaJoyrickandmorty = [
     {id:120, src:"../assets/imagenes/portajoystick/rickandmorty9.jpeg"}
   ];
   this.arrayListPortaJoyryu = [
-    {id:121, src:"../assets/imagenes/portajoystick/ryu1.jpeg"},
     {id:122, src:"../assets/imagenes/portajoystick/ryu.jpeg"},
     {id:123, src:"../assets/imagenes/portajoystick/ryu2.jpeg"},
-    {id:124, src:"../assets/imagenes/portajoystick/ryu3.jpeg"},
     {id:125, src:"../assets/imagenes/portajoystick/ryu4.jpeg"},
     {id:126, src:"../assets/imagenes/portajoystick/ryu5.jpeg"},
     {id:127, src:"../assets/imagenes/portajoystick/ryu6.jpeg"}
   ];
   this.arrayListPortaJoyspider = [
-    {id:128, src:"../assets/imagenes/portajoystick/spidermanUno.jpeg"},
     {id:129, src:"../assets/imagenes/portajoystick/spiderman.jpeg"},
     {id:130, src:"../assets/imagenes/portajoystick/spiderman2.jpeg"},
     {id:131, src:"../assets/imagenes/portajoystick/spiderman3.jpeg"},
     {id:132, src:"../assets/imagenes/portajoystick/spiderman4.jpeg"}
   ];
   this.arrayListPortaJoyTerminator = [
-    {id:133, src:"../assets/imagenes/portajoystick/terminator1.jpeg"},
     {id:134, src:"../assets/imagenes/portajoystick/terminator.jpeg"},
     {id:135, src:"../assets/imagenes/portajoystick/terminator2.jpeg"},
     {id:136, src:"../assets/imagenes/portajoystick/terminator3.jpeg"},
@@ -255,8 +249,8 @@ this.arrayListPortaJoyrickandmorty = [
 };
 
 //MODAL
-openModal(templateModalSlider: TemplateRef<any>){
-  this.bsModalRef = this.modalService.show(templateModalSlider);
+openModal(templateModalCard123Etc: TemplateRef<any>){
+  this.bsModalRef = this.modalService.show(templateModalCard123Etc);
 }
 
 

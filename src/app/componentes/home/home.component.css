@@ -1,98 +1,105 @@
+/**<<<<<<<<<<<<<  NAVBAR  >>>>>>>>>>>>>>>>>**/
+/**<<<<<<<<<<<<<///////>>>>>>>>>>>>>>>>>**/
 
-  /**NAVBAR**/
- 
-    .imgLogoCueva3d{
-        width: 90px;
-        height: 90px;
-    }
-    
-      
-      /**Typeo CSS Start**/
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-      * {
-      box-sizing: border-box;      
-    }     
-    
-    
-   
-      .card{     
-      border:2px solid #FFFFFF;
-      overflow: hidden;
-      }
-
-      .card-image{      
-      height:21.875rem;
-      background-size:cover;
-      box-shadow:0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-      transition:transform 500ms ease-in;
-      filter:grayscale(100%);
-      }
-
-      .card-image:hover{
-      transform:scale(1.10);     
-      filter:grayscale(0%);
-      }
-
-      @media handheld, only screen and (max-width: 991px) {
-        .card {
-          height:22.875rem;
-          width: 13.875rem;;
-        }
-        }
+.imgLogoCueva3d {
+  width: 90px;
+  height: 90px;
+}
 
 
+/**Formato tarjetas**/
 
+.card {
+  border: 2px solid #FFFFFF;
+  overflow: hidden;
+}
 
-   /**MODAL CON SLIDER**/
+/**Formato imagen tarjetas**/
+.card-image {
+  height: 21.875rem;
+  background-size: cover;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  transition: transform 500ms ease-in;
+  filter: grayscale(100%);
+}
 
-   .carousel-control-prev-icon, .carousel-control-next-icon{
-   
-    background-color: rgb(7, 0, 0);
-    position:fixed;
-   }
+/**Efecto color tarjetas**/
+.card-image:hover {
+  transform: scale(1.10);
+  filter: grayscale(0%);
+}
 
-  .carousel-control-prev-icon{  
-    margin-right: 3%;
-   }
-
-   .carousel-control-next, .carousel-control-prev{
-    position: fixed;
-    padding: 30%;
-   }
-
-
-   #contenedor{
-    width:500px;
-    height:900px;
+/**Tamaño para celular de tarjetas**/
+@media handheld,
+only screen and (max-width: 991px) {
+  .card {
+    height: 22.875rem;
+    width: 13.875rem;
+    ;
   }
+}
 
-  /*Aplicamos la propiedad object-fit cover, ajustar su tamaño y no perder la proporcion de nuestra imagen*/
-  #imgmodal{
-    object-fit: cover;
-    width:50%;
-    height:50%;
+
+
+
+/**<<<<<<<  MODAL CON SLIDER  >>>>>>>>>>>>**/
+/**<<<<<<<////////////////>>>>>>>>>>>>**/
+
+/**Da formato felchas de next y prev**/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+  background-color: rgb(7, 0, 0);
+  position: fixed;
+}
+
+/**Posiciona la flecha prev**/
+.carousel-control-prev-icon {
+  margin-right: 3%;
+}
+/**Posiciona las flechas de next y prev**/
+.carousel-control-next,
+.carousel-control-prev {
+  position: fixed;
+  padding: 30%;
+}
+
+/**Da tamaño al contenedor blanco que esta atras de las imagenes**/
+.carousel-item{
+width:475px;
+height:600px;
+}
+
+
+/**Tapa el icono de imagen faltante**/
+.d-block{
+  width:1%;
+  height:2%;
+}
+
+
+/**Elimina en pantallas pequeñas las flechas de next y prev**/
+@media handheld,
+only screen and (max-width: 900px) {
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
   }
+}
+/**Muestra btn en celular con texto "tap tap para cerrar" **/
 
-   @media handheld, only screen and (max-width: 900px) {
-     .carousel-control-prev-icon, .carousel-control-next-icon {
-    display:none;
-    }
-    }
+@media handheld,
+only screen and (min-width: 900px) {
+  #btnCel {
+    display: none;
+  }
+}
 
-
-   @media handheld, only screen and (min-width: 900px) {
-    #btnCel {
-    display:none;
-    }
-    }
-
-    @media handheld, only screen and (max-width: 900px) {
-      #btnPc {
-      display:none;
-      }
-      }
-      
-    
-
-
-
+/**Muestra btn en pc con texto "doble click para cerrar" **/
+@media handheld,
+only screen and (max-width: 900px) {
+  #btnPc {
+    display: none;
+  }
+}
