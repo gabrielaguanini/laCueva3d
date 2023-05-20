@@ -1,0 +1,16 @@
+[debug] [2023-05-20T02:38:04.433Z] ----------------------------------------------------------------------
+[debug] [2023-05-20T02:38:04.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jade_\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-20T02:38:04.435Z] CLI Version:   12.0.0
+[debug] [2023-05-20T02:38:04.435Z] Platform:      win32
+[debug] [2023-05-20T02:38:04.436Z] Node Version:  v18.15.0
+[debug] [2023-05-20T02:38:04.436Z] Time:          Fri May 19 2023 23:38:04 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-05-20T02:38:04.436Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-20T02:38:04.439Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-05-20T02:38:04.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-20T02:38:04.522Z] > authorizing via signed-in user (gabriela.guanini@gmail.com)
+[debug] [2023-05-20T02:38:04.523Z] [iam] checking project lacueva3d-3b5e0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-20T02:38:04.523Z] > refreshing access token with scopes: []
+[debug] [2023-05-20T02:38:04.524Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-20T02:38:04.524Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-20T02:38:05.315Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200

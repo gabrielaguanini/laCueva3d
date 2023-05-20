@@ -61,10 +61,7 @@ ngOnInit(){
     {id:4, src:"../assets/imagenes/bustos/batman4.jpeg"}
   ];
   this.arrayListBustFranke = [
-    {id:5, src:"../assets/imagenes/bustos/frankenstein1.jpeg"},
-    {id:6, src:"../assets/imagenes/bustos/frankenstein2.jpeg"},
-    {id:7, src:"../assets/imagenes/bustos/frankenstein3.jpeg"},
-    {id:8, src:"../assets/imagenes/bustos/frankenstein4.jpeg"},
+    {id:5, src:"../assets/imagenes/bustos/frankenstein1.jpeg"},   
     {id:9, src:"../assets/imagenes/bustos/frankenstein5.jpeg"}
   ];
   this.arrayListBustTortu = [
@@ -101,29 +98,25 @@ ngOnInit(){
   this.arrayListFigCoFlanders = [
     {id:31, src:"../assets/imagenes/figurascoleccionismo/flanders1.jpeg"},
     {id:32, src:"../assets/imagenes/figurascoleccionismo/flanders2.jpeg"},
-    {id:33, src:"../assets/imagenes/figurascoleccionismo/flanders3.jpeg"},
     {id:34, src:"../assets/imagenes/figurascoleccionismo/flanders4.jpeg"},
     {id:35, src:"../assets/imagenes/figurascoleccionismo/flanders5.jpeg"},
     {id:36, src:"../assets/imagenes/figurascoleccionismo/flanders6.jpeg"}
   ];
   this.arrayListFigCoLuffy = [
-    {id:37, src:"../assets/imagenes/figurascoleccionismo/luffy1.jpeg"},
     {id:38, src:"../assets/imagenes/figurascoleccionismo/luffy10.jpeg"},
     {id:39, src:"../assets/imagenes/figurascoleccionismo/luffy11.jpeg"},
     {id:40, src:"../assets/imagenes/figurascoleccionismo/luffy12.jpeg"},
     {id:41, src:"../assets/imagenes/figurascoleccionismo/luffy13.jpeg"},
     {id:42, src:"../assets/imagenes/figurascoleccionismo/luffy2.jpeg"},
     {id:43, src:"../assets/imagenes/figurascoleccionismo/luffy3.jpeg"},
+    {id:37, src:"../assets/imagenes/figurascoleccionismo/luffy1.jpeg"},
     {id:45, src:"../assets/imagenes/figurascoleccionismo/luffy4.jpeg"},
-    {id:46, src:"../assets/imagenes/figurascoleccionismo/luffy5.jpeg"},
     {id:47, src:"../assets/imagenes/figurascoleccionismo/luffy6.jpeg"},
     {id:48, src:"../assets/imagenes/figurascoleccionismo/luffy7.jpeg"},
     {id:49, src:"../assets/imagenes/figurascoleccionismo/luffy8.jpeg"},
     {id:50, src:"../assets/imagenes/figurascoleccionismo/luffy9.jpeg"}
   ];
   this.arrayListFigQuickSi = [
-    {id:51, src:"../assets/imagenes/figurascoleccionismo/quicksilver.jpeg"},
-    {id:52, src:"../assets/imagenes/figurascoleccionismo/quicksilver1.jpeg"},
     {id:53, src:"../assets/imagenes/figurascoleccionismo/quicksilver2.jpeg"},
     {id:54, src:"../assets/imagenes/figurascoleccionismo/quicksilver3.jpeg"},
     {id:55, src:"../assets/imagenes/figurascoleccionismo/quicksilver4.jpeg"}
@@ -233,7 +226,6 @@ this.arrayListPortaJoyrickandmorty = [
   this.arrayListVarios = [
     {id:140, src:"../assets/imagenes/varios/t8001.jpeg"},
     {id:141, src:"../assets/imagenes/varios/t80010.jpeg"},
-    {id:142, src:"../assets/imagenes/varios/t80011.jpeg"},
     {id:143, src:"../assets/imagenes/varios/t8002.jpeg"},
     {id:144, src:"../assets/imagenes/varios/t8003.jpeg"},
     {id:145, src:"../assets/imagenes/varios/t8004.jpeg"},
