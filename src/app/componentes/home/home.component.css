@@ -64,18 +64,8 @@ only screen and (max-width: 991px) {
   padding: 30%;
 }
 
-/**Da tamaño al contenedor blanco que esta atras de las imagenes**/
-.carousel-item{
-width:475px;
-height:600px;
-}
 
 
-/**Tapa el icono de imagen faltante**/
-.d-block{
-  width:1%;
-  height:2%;
-}
 
 
 /**Elimina en pantallas pequeñas las flechas de next y prev**/
