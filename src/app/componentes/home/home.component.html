@@ -4,7 +4,7 @@
   <div class="row">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand"><img class="imgLogoCueva3d" src="../assets/imagenes/lacueva3dLogo2.jpeg"
+        <a class="navbar-brand"><img id="imgLogoCueva3d" src="../assets/imagenes/lacueva3dLogoGde.jpeg"
             alt="ImgLogoCueva3d"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -215,12 +215,12 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img1}}" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" *ngFor="let listaImg of arrayListModalCard1">
+            <div class="carousel-item" *ngFor="let listaImg of arrayListModalCard1" id="{{listaImg.id}}">
               <img src="{{listaImg.src}}" class="d-block w-100" alt="...">
             </div>
           </div>
@@ -247,7 +247,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img2}}" class="d-block w-100" alt="...">
@@ -280,7 +280,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img3}}" class="d-block w-100" alt="...">
@@ -312,7 +312,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img4}}" class="d-block w-100" alt="...">
@@ -344,7 +344,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img5}}" class="d-block w-100" alt="...">
@@ -376,7 +376,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img6}}" class="d-block w-100" alt="...">
@@ -410,7 +410,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img7}}" class="d-block w-100" alt="...">
@@ -442,7 +442,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img8}}" class="d-block w-100" alt="...">
@@ -474,7 +474,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img9}}" class="d-block w-100" alt="...">
@@ -506,7 +506,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img10}}" class="d-block w-100" alt="...">
@@ -538,7 +538,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img11}}" class="d-block w-100" alt="...">
@@ -570,7 +570,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img12}}" class="d-block w-100" alt="...">
@@ -602,7 +602,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img13}}" class="d-block w-100" alt="...">
@@ -636,7 +636,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img14}}" class="d-block w-100" alt="...">
@@ -668,7 +668,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img15}}" class="d-block w-100" alt="...">
@@ -700,7 +700,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img16}}" class="d-block w-100" alt="...">
@@ -732,7 +732,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img16}}" class="d-block w-100" alt="...">
@@ -764,7 +764,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img16}}" class="d-block w-100" alt="...">
@@ -798,7 +798,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img19}}" class="d-block w-100" alt="...">
@@ -830,7 +830,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img20}}" class="d-block w-100" alt="...">
@@ -862,7 +862,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img21}}" class="d-block w-100" alt="...">
@@ -894,7 +894,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img22}}" class="d-block w-100" alt="...">
@@ -926,7 +926,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img23}}" class="d-block w-100" alt="...">
@@ -958,7 +958,7 @@
           cerrar</button>
       </div>
       <div class="container" (dblclick)="bsModalRef.hide()">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="{{img24}}" class="d-block w-100" alt="...">
@@ -983,42 +983,42 @@
 
 
 
-<!--#######################   NOTES   ####################### -->
-<!-- MAQUETADO HTML: Este componente html se estructura de la siguiente forma: 4 filas con 6 imagenes cada fila -->
-<!-- (24 imagenes en total). Cada imagen al hacer click, abre un modal/template que contiene un slider con más  -->
-<!-- imágenes del mismo modelo de figura. Éstos modal/template son 24 en total y cada uno pertenece a una card,  -->
-<!-- cada uno contiene tiene un slider con más imagenes del mismo modelo. La ruta de la  contiene una variable -->
-<!-- que figura en el apartado del component.ts llamado                                                          -->     
-<!--                   "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver)                  -->
-<!-- Las card las contienen las etiquetas "<div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">" mientras que  -->
-<!-- las imágenes las contienen los backgrounds de las etiquetas "<div class="card-image"> que son las mismas etiquetas-->
-<!-- que contiene la función "openModal(templateModalCard1 ó templateModalCard2, etc)"" función de la que se habla -->   
-<!-- más adelante. Si se quisiesen cambiar las imagenes de las cards, es en las variables que figuran en el apartado-->  
-<!-- "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver) donde se deben cambiar--> 
+    <!--#######################   NOTES   ####################### -->
+    <!-- MAQUETADO HTML: Este componente html se estructura de la siguiente forma: 4 filas con 6 imagenes cada fila -->
+    <!-- (24 imagenes en total). Cada imagen al hacer click, abre un modal/template que contiene un slider con más  -->
+    <!-- imágenes del mismo modelo de figura. Éstos modal/template son 24 en total y cada uno pertenece a una card,  -->
+    <!-- cada uno contiene tiene un slider con más imagenes del mismo modelo. La ruta de la  contiene una variable -->
+    <!-- que figura en el apartado del component.ts llamado                                                          -->
+    <!--                   "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver)                  -->
+    <!-- Las card las contienen las etiquetas "<div class="card col-lg-2 col-md-4 col-sm-12 mx-auto">" mientras que  -->
+    <!-- las imágenes las contienen los backgrounds de las etiquetas "<div class="card-image"> que son las mismas etiquetas-->
+    <!-- que contiene la función "openModal(templateModalCard1 ó templateModalCard2, etc)"" función de la que se habla -->
+    <!-- más adelante. Si se quisiesen cambiar las imagenes de las cards, es en las variables que figuran en el apartado-->
+    <!-- "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver) donde se deben cambiar-->
 
-<!-- MODAL/TEMPLATE: es una instancia de la clase BsModalRef,  el modal/template abre el template que le  -->
-<!-- correponda al hacer click en una  card mediante la función "openModal(templateModalCard1 ó templateModalCard2, etc)" -->
-<!-- el los modal/template los contiene la etiqueta angular "<ng-template>" "-->
+    <!-- MODAL/TEMPLATE: es una instancia de la clase BsModalRef,  el modal/template abre el template que le  -->
+    <!-- correponda al hacer click en una  card mediante la función "openModal(templateModalCard1 ó templateModalCard2, etc)" -->
+    <!-- el los modal/template los contiene la etiqueta angular "<ng-template>" "-->
 
-<!-- SLIDER: el slider pertenece a boostrap carrousel, la/a primera/s imagen/es de todos los slider las contiene la etiqueta  -->
-<!-- <div class="carousel-item active", esa etiqueta contiene la misma imagen de la card a la que se le haya hecho click,  -->
-<!-- la/s ruta/s de esa/s primera/s imagen/es la contiene una variable que figura en el apartado del component.ts -->
-<!--  lamado             "Variables para Cards con imagenes y ModalCards" (buscar este nombre en ts para ver)    -->
-<!-- Si se quisiesen cambiar las primera/s imagen/es de las cards, es en las variables que figuran en el apartado-->  
-<!-- "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver) donde se deben cambiar--> 
+    <!-- SLIDER: el slider pertenece a boostrap carrousel, la/a primera/s imagen/es de todos los slider las contiene la etiqueta  -->
+    <!-- <div class="carousel-item active", esa etiqueta contiene la misma imagen de la card a la que se le haya hecho click,  -->
+    <!-- la/s ruta/s de esa/s primera/s imagen/es la contiene una variable que figura en el apartado del component.ts -->
+    <!--  lamado             "Variables para Cards con imagenes y ModalCards" (buscar este nombre en ts para ver)    -->
+    <!-- Si se quisiesen cambiar las primera/s imagen/es de las cards, es en las variables que figuran en el apartado-->
+    <!-- "Variables para Cards con imagenes y ModalCards" (buscar en ts para ver) donde se deben cambiar-->
 
-<!-- LISTAS: La siguientes imagenes de todos los sliders que son contenidos por las etiquetas <div class="carousel-item",-->
-<!-- se generan a partir de las array lists que figuran en el component.ts, estos array listas contienen las rutas a las imágenes.-->
-<!-- las array lists tienen dos referencias "id" y "src", el id solo se creo por si se necesita, src contiene las rutas -->
-<!-- a las imágenes. Hay una array list por cada card o modal/template. Las array lists figuran en el apartado del component.ts -->
-<!-- llamado       "LISTAS PARA SLIDER DEL MODAL" (buscar este nombre en ts para ver)                            -->
-<!-- Si se quisieses cambiar las imagenes de las listas, es en las array list que menciono donde deben modificarse sus rutas-->
+    <!-- LISTAS: La siguientes imagenes de todos los sliders que son contenidos por las etiquetas <div class="carousel-item",-->
+    <!-- se generan a partir de las array lists que figuran en el component.ts, estos array listas contienen las rutas a las imágenes.-->
+    <!-- las array lists tienen dos referencias "id" y "src", el id solo se creo por si se necesita, src contiene las rutas -->
+    <!-- a las imágenes. Hay una array list por cada card o modal/template. Las array lists figuran en el apartado del component.ts -->
+    <!-- llamado       "LISTAS PARA SLIDER DEL MODAL" (buscar este nombre en ts para ver)                            -->
+    <!-- Si se quisieses cambiar las imagenes de las listas, es en las array list que menciono donde deben modificarse sus rutas-->
 
-<!--  CÓMO SE GENERAN LAS ETIQUETAS "carousel-item" HACIENDO QUE CADA ETIQUETA GENERADA CONTENGA LAS IMAGENES DE LA LISTA: -->
-<!--  Mediante la anotation angular *ngFor se recorre la lista que corresponde a la card o al modal/template -->
-<!--  y mediante la extrapolacion, se toma del array list que corresponda el registro "src" que contiene la ruta -->
-<!--   -->
-<!--   -->
-<!--   -->
-<!--   -->
-<!--   -->
+    <!--  CÓMO SE GENERAN LAS ETIQUETAS "carousel-item" HACIENDO QUE CADA ETIQUETA GENERADA CONTENGA LAS IMAGENES DE LA LISTA: -->
+    <!--  Mediante la anotation angular *ngFor se recorre la lista que corresponde a la card o al modal/template -->
+    <!--  y mediante la extrapolacion, se toma del array list que corresponda el registro "src" que contiene la ruta -->
+    <!--   -->
+    <!--   -->
+    <!--   -->
+    <!--   -->
+    <!--   -->

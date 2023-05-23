@@ -54,11 +54,9 @@ arrayListModalCard1: listaImg   = [
   {id:71, src:"../assets/imagenes/portajoystick/darthvader3.jpeg"}
 ];
 arrayListModalCard2: listaImg   = [    
-   {id:73, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
+  {id:73, src:"../assets/imagenes/portajoystick/ironmaiden.jpeg"},
   {id:74, src:"../assets/imagenes/portajoystick/ironmaiden2.jpeg"},
-  {id:75, src:"../assets/imagenes/portajoystick/ironmaiden3.jpeg"},
   {id:76, src:"../assets/imagenes/portajoystick/ironmaiden4.jpeg"},
-  {id:77, src:"../assets/imagenes/portajoystick/ironmaiden5.jpeg"},
   {id:78, src:"../assets/imagenes/portajoystick/ironmaiden6.jpeg"}
 ];
 arrayListModalCard3: listaImg   = [    

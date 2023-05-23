@@ -1,10 +1,14 @@
 /**<<<<<<<<<<<<<  NAVBAR  >>>>>>>>>>>>>>>>>**/
 /**<<<<<<<<<<<<<///////>>>>>>>>>>>>>>>>>**/
 
-.imgLogoCueva3d {
+#imgLogoCueva3d {
   width: 90px;
   height: 90px;
 }
+
+
+/**<<<<<<<<<<<<<  CARDS  >>>>>>>>>>>>>>>>>**/
+/**<<<<<<<<<<<<<///////>>>>>>>>>>>>>>>>>**/
 
 
 /**Formato tarjetas**/
@@ -64,10 +68,6 @@ only screen and (max-width: 991px) {
   padding: 30%;
 }
 
-
-
-
-
 /**Elimina en pantallas pequeñas las flechas de next y prev**/
 @media handheld,
 only screen and (max-width: 900px) {
@@ -93,3 +93,40 @@ only screen and (max-width: 900px) {
     display: none;
   }
 }
+
+/**Ancho y alto fijo del slider para pc**/
+.container{
+  width: 470px;
+  height:810px;
+  background-color:black;
+ 
+}
+/**Ancho y alto fijo de la imagen del slider para pc**/
+img{
+  width: 470px;
+  height:800px;
+}
+
+/**Ancho y alto fijo del slider para pantallas pequeñas**/
+@media handheld,
+only screen and (max-width: 800px) {
+  .container{
+    width: 330px;
+    height:670px;
+  
+   
+  }
+  }
+
+/**Ancho y alto fijo de la imagen del slider para pantallas pequeñas**/
+@media handheld,
+only screen and (max-width: 800px) {
+  .d-block{
+    width: 330px;
+    height:650px;
+  }
+   
+  }
+
+
+
