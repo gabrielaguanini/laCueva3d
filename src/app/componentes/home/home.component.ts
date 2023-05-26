@@ -1,4 +1,4 @@
-import { Component, TemplateRef } from '@angular/core';
+import { Component, ElementRef, HostListener, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 
@@ -16,6 +16,7 @@ export class HomeComponent {
 
 //////####### MODAL #######//////
 bsModalRef!: BsModalRef;
+
 
  //////####### VARIABLES PARA PONER PRIMER FOTO EN CARDS CON IMAGENES Y TEMPLATES #######//////
 
@@ -203,6 +204,10 @@ openModal(templateModalCard123Etc: TemplateRef<any>){
   this.bsModalRef = this.modalService.show(templateModalCard123Etc);
 }
 
+public goToSection(section2: string): void {
+  const element = document.getElementById(section2);
+  element!.scrollIntoView({ behavior: 'smooth' });
+}
 
 }
    
