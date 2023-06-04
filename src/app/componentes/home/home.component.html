@@ -6,11 +6,12 @@
       <div class="container-fluid">
         <a class="navbar-brand"><img id="imgLogoCueva3d" src="../assets/imagenes/lacueva3dLogoGde.jpeg"
             alt="ImgLogoCueva3d"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button (click)="toggleCollapse()" class="navbar-toggler" type="button"
+          [attr.aria-expanded]="isExpanded ? 'true' : 'false'" [attr.aria-controls]="'collapseExample'">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"
+          [ngClass]="{'collapse': !isExpanded, 'show': isExpanded}">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page"
@@ -31,10 +32,10 @@
   <br>
   <br>
   <br>
-
+</div>
   <!--///////////////////////CARDS CON IMAGENES///////////////////////-->
 
-  <div class="container-fluid">
+<div class="container-fluid">
     <!--%%%%%%  CARD 1 A 6 %%%%%% ---PORTAJOYSTICK-->
     <br>
     <h2 style="text-align: center;">PORTA JOYSTICK</h2>
@@ -201,7 +202,10 @@
         </div>
       </div>
     </div>
-
+    <div class="container-fluid">
+      <app-footer></app-footer>
+    </div>
+</div>
     <!--//////////////////////MODAL Y SLIDER///////////////////////-->
 
     <!--%%%%%%  TemplateModalCard 1 a 6 %%%%%% --- PORTAJOYSTICK-->
@@ -220,10 +224,11 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img1}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard1" id="{{listaImg.id}}">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard1" id="{{listaImg.id}}">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
-          </div>          
+          </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -252,7 +257,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img2}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard2">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard2">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -285,7 +291,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img3}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard3">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard3">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -317,7 +324,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img4}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard4">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard4">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -349,7 +357,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img5}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard5">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard5">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -381,7 +390,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img6}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard6">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard6">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -415,7 +425,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img7}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard7">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard7">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -447,7 +458,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img8}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard8">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard8">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -479,7 +491,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img9}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard9">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard9">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -511,7 +524,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img10}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard10">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard10">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -543,7 +557,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img11}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard11">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard11">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -575,7 +590,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img12}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard12">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard12">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -607,7 +623,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img13}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard13">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard13">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -641,7 +658,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img14}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard14">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard14">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -673,7 +691,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img15}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard15">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard15">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -705,7 +724,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img16}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard16">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard16">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -737,7 +757,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img16}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard17">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard17">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -769,7 +790,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img16}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard18">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard18">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -803,7 +825,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img19}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard19">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard19">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -835,7 +858,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img20}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard20">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard20">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -867,7 +891,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img21}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard21">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard21">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -899,7 +924,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img22}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard22">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard22">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -931,7 +957,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img23}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard23">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard23">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -963,7 +990,8 @@
             <div class="carousel-item active fixed-container d-flex align-items-center justify-content-center">
               <img src="{{img24}}" class="d-block img-fluid w-100" alt="...">
             </div>
-            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center" *ngFor="let listaImg of arrayListModalCard24">
+            <div class="carousel-item fixed-container d-flex align-items-center justify-content-center"
+              *ngFor="let listaImg of arrayListModalCard24">
               <img src="{{listaImg.src}}" class="d-block img-fluid w-100" alt="...">
             </div>
           </div>
@@ -980,6 +1008,8 @@
         </div>
       </div>
     </ng-template>
+
+  
 
 
 

@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, TemplateRef } from '@angular/core';
+import { Component, ElementRef, TemplateRef, ViewChild} from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 
@@ -14,9 +14,12 @@ type listaImg = Array<{id:number, src:string}>
 })
 export class HomeComponent {
 
+//////####### NAVBAR #######//////
+isExpanded: boolean = false;
+
+
 //////####### MODAL #######//////
 bsModalRef!: BsModalRef;
-
 
  //////####### VARIABLES PARA PONER PRIMER FOTO EN CARDS CON IMAGENES Y TEMPLATES #######//////
 
@@ -27,6 +30,7 @@ bsModalRef!: BsModalRef;
  img4: String = './assets/imagenes/portajoystick/ryu1.jpeg';
  img5: String = './assets/imagenes/portajoystick/terminator1.jpeg';
  img6: String = './assets/imagenes/portajoystick/rick1.jpeg';
+ 
 //Variables para Cards con imagenes y ModalCards 7 al 12 ---Figuras de Coleccionismo
  img7: String = './assets/imagenes/figurascoleccionismo/quicksilver.jpeg';
  img8: String = './assets/imagenes/figurascoleccionismo/luffy5.jpeg';
@@ -193,21 +197,24 @@ arrayListModalCard24: listaImg   = [
   {id:150, src:"../assets/imagenes/varios/t8009.jpeg"},
 ];
 
+
 constructor(private modalService:BsModalService){
 
+  
 };
 
 ngOnInit(){};
 
+
 //////####### MODAL #######//////
 openModal(templateModalCard123Etc: TemplateRef<any>){
-  this.bsModalRef = this.modalService.show(templateModalCard123Etc);
+  this.bsModalRef = this.modalService.show(templateModalCard123Etc); 
 }
 
-public goToSection(section2: string): void {
-  const element = document.getElementById(section2);
-  element!.scrollIntoView({ behavior: 'smooth' });
+//////####### NAVBAR #######//////
+toggleCollapse() {
+  this.isExpanded = !this.isExpanded;
 }
 
-}
-   
+
+  }

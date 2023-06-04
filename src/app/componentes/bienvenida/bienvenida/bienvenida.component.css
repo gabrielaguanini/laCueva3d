@@ -1,0 +1,260 @@
+/* TEXTO DE BIENVENIDA Y SUS ANIMACIONES  */
+
+@keyframes slideIn{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: slideIn 1.5s ease-out;
+	padding-top: 20vh;
+}
+
+.welcome-title {
+    font-size: 3rem;
+    color: #333333;
+    animation: zoomIn 1.5s ease-out;
+}
+
+.welcome-subtitle {
+    font-size: 2rem;
+    color: #666666;
+    animation: zoomIn 1.5s ease-out;
+}
+
+
+
+/* IMPRESORA 3D  */
+
+svg{
+	height:150px;
+	width:135px;
+	position:absolute;
+	top:21%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	border-radius:20px;
+	border:10px solid #333;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	
+}
+
+@keyframes slideIn {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes zoomIn {
+	0% {
+	  opacity: 0;
+	  transform: scale(0);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+  }
+  
+  .containersvg {
+	opacity: 0;
+	animation: fadeIn 1s ease-out forwards;
+	animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .welcome-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	animation: slideIn 1.5s ease-out;
+	padding-top: 20vh;
+  }
+  
+  .welcome-title {
+	font-size: 3rem;
+	color: #333333;
+	animation: zoomIn 1.5s ease-out;
+  }
+  
+  .welcome-subtitle {
+	font-size: 2rem;
+	color: #666666;
+	animation: zoomIn 1.5s ease-out;
+  }
+  
+
+  .containerbutton {
+	margin: 0;
+	padding-top: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+  }
+  
+  .fade-out-once {
+	animation: fadeOut 5s ease-in-out 1s forwards;
+  }
+  
+  .containerbutton.fade-out-once {
+	animation-delay: 6.5s;
+  }
+  
+  @keyframes fadeOut {
+	0% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	50% {
+	  opacity: 0;
+	  transform: scale(0.5);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+  }
+  
+  /* Resto del código CSS */
+  
+
+/*  BOTON INGRESAR (no es un boton, solo tiene la forma)  */
+
+.containerbutton {
+    margin: 0;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+   
+    letter-spacing: 10px;
+    color: #262626;
+}
+a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    bottom: 0px;
+    right: 0px;
+    transition-property: height, width;
+    transition-delay: 0.5s, 1s;
+    transition-duration: 0.5s;
+    transform-style: linear;
+}
+a:hover::before {
+    transition-delay: 0s, 0.5s;
+    transition-property: width, height;
+    width: 5px;
+    height: 100%;
+}
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #bfbfbe;
+    transform: scaleX(0);
+    transition: 300ms;
+    transform-origin: right;
+    z-index: -1;
+}
+a:hover::after {
+    transform: scale(1);
+    transition-delay: 1s;
+}
+
+/*  BOTON INGRESAR efecto de desvanecimiento */
+
+
+
+@keyframes fadeOut {
+	0% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	50% {
+	  opacity: 0;
+	  transform: scale(0.5);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+  }
+  
+  .fade-out-once {
+	animation: fadeOut 5s ease-in-out 1s forwards;
+  }
+  
+  .containerbutton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+  }
+  
+  a {
+	position: relative;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	color: #262626;
+  }
+  
+
+
+  #containerhome{
+	border-radius:20px;
+	border:15px solid #333;
+  }
