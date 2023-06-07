@@ -35,19 +35,19 @@ bsModalRef!: BsModalRef;
  img7: String = './assets/imagenes/figurascoleccionismo/quicksilver.jpeg';
  img8: String = './assets/imagenes/figurascoleccionismo/luffy5.jpeg';
  img9: String = './assets/imagenes/figurascoleccionismo/tortugaleonardo3.jpeg';
- img10: String = './assets/imagenes/figurascoleccionismo/luffy8.jpeg';
+ img10: String = './assets/imagenes/figurascoleccionismo/dragonball1.jpeg';
  img11: String = './assets/imagenes/figurascoleccionismo/quicksilver4.jpeg';
  img12: String = './assets/imagenes/figurascoleccionismo/flanders4.jpeg';
- //Variables para Cards con imagenes y ModalCards 13 al 18 ---Picadores
+ //Variables para Cards con imagenes y ModalCards 13 al 18 ---Picadores (actualmente retirado o comentado)
  img13: String = './assets/imagenes/picadores/picador3.jpeg';
  img14: String = './assets/imagenes/picadores/picador1.jpeg';
  img15: String = './assets/imagenes/picadores/picador2.jpeg';
  img16: String = this.img13;
  img17: String = this.img14;
  img18: String = this.img15;
-  //ArrayList ModalCards 19 al 24 ---Bustos
+  //ArrayList ModalCards 19 al 24 ---VARIOS
  img19: String = './assets/imagenes/bustos/batman4.jpeg';
- img20: String = './assets/imagenes/bustos/batman3.jpeg';
+ img20: String = './assets/imagenes/picadores/picador1.jpeg';
  img21: String = './assets/imagenes/bustos/frankenstein3.jpeg';
  img22: String = './assets/imagenes/bustos/frankenstein4.jpeg';
  img23: String = './assets/imagenes/bustos/tortugarafael4.jpeg';
@@ -122,9 +122,16 @@ arrayListModalCard9: listaImg   = [
   {id:59, src:"../assets/imagenes/figurascoleccionismo/tortugaleonardo4.jpeg"}
 ];
 
-     //***Duplico las modalCard10 y 11 con las ModalCard7 y 8 xq no tengo imagen nueva para poner
+     //***Duplico las modalCard11 con la ModalCard8 xq no tengo imagen nueva para poner
       //***Cuando se agregue una img, crear aca la ArrayList que se va a mostrar
-arrayListModalCard10: listaImg = this.arrayListModalCard8;
+arrayListModalCard10: listaImg = [    
+  {id:31, src:"../assets/imagenes/figurascoleccionismo/dragonball1.jpeg"},
+  {id:32, src:"../assets/imagenes/figurascoleccionismo/dragonball2.jpeg"},
+  {id:34, src:"../assets/imagenes/figurascoleccionismo/dragonball3.jpeg"},
+  {id:35, src:"../assets/imagenes/figurascoleccionismo/dragonball4.jpeg"},
+  {id:36, src:"../assets/imagenes/figurascoleccionismo/dragonball5.jpeg"},
+  {id:36, src:"../assets/imagenes/figurascoleccionismo/dragonball6.jpeg"}
+];
 
 arrayListModalCard11: listaImg = this.arrayListModalCard7;
 
@@ -165,7 +172,15 @@ arrayListModalCard19: listaImg   = [
     {id:4, src:"../assets/imagenes/bustos/batman4.jpeg"}
   ];
 
-  arrayListModalCard20: listaImg = this.arrayListModalCard19;
+  arrayListModalCard20: listaImg =  [    
+    {id:60, src:"../assets/imagenes/picadores/picador1.jpeg"},
+    {id:63, src:"../assets/imagenes/picadores/picador4.jpeg"},
+    {id:64, src:"../assets/imagenes/picadores/picador5.jpeg"},
+    {id:65, src:"../assets/imagenes/picadores/picador6.jpeg"},
+    {id:66, src:"../assets/imagenes/picadores/picador7.jpeg"},
+    {id:67, src:"../assets/imagenes/picadores/picador8.jpeg"},
+    {id:68, src:"../assets/imagenes/picadores/picador9.jpeg"}
+  ];
   
 arrayListModalCard21: listaImg   = [    
     {id:5, src:"../assets/imagenes/bustos/frankenstein1.jpeg"},   
